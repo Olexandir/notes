@@ -1,3 +1,3 @@
 export const environment = {
-  BASE_URL: 'https://rickandmortyapi.com/api',
-}
+  BASE_URL: "https://jsonplaceholder.typicode.com",
+};

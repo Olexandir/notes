@@ -1,6 +1,5 @@
-import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { GetAllService } from "./services/getAll.service";
+import { GeneralService } from "./services/general.service";
 
 @Component({
   selector: "app-root",
@@ -8,9 +7,9 @@ import { GetAllService } from "./services/getAll.service";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  constructor(private getServ: GetAllService) { }
+  constructor(private general: GeneralService) {}
 
   ngOnInit() {
-    this.getServ.getAllCharacters().subscribe(data => console.log(data))
+    this.general.getAll();
   }
 }

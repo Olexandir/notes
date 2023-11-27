@@ -2,8 +2,10 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { HttpClientModule } from "@angular/common/http";
-import { AppRoutingModule } from "./app.routing.module";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MainPageModule } from "./pages/main-page/main-page.module";
+import { AppRoutingModule } from "./app-routing.module";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [AppComponent],
@@ -11,8 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MainPageModule,
     AppRoutingModule,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
