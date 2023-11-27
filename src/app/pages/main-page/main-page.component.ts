@@ -9,9 +9,11 @@ export class MainPageComponent {
   public navItems: NavItem[] = [
     {
       title: "Users",
+      link: "users",
     },
     {
       title: "Todos",
+      link: "todos",
     },
   ];
 }

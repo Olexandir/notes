@@ -5,7 +5,6 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MainPageModule } from "./pages/main-page/main-page.module";
 import { AppRoutingModule } from "./app-routing.module";
-import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [AppComponent],
