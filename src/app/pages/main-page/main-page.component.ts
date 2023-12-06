@@ -9,11 +9,15 @@ export class MainPageComponent {
   public navItems: NavItem[] = [
     {
       title: "Users",
-      link: "users",
+      link: "/users",
     },
     {
       title: "Todos",
-      link: "todos",
+      link: "/todos",
+    },
+    {
+      title: "Calendar",
+      link: "/calendar",
     },
   ];
 }

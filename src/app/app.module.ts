@@ -5,6 +5,9 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MainPageModule } from "./pages/main-page/main-page.module";
 import { AppRoutingModule } from "./app-routing.module";
+import { TodosPageModule } from "./pages/todos-page/todos.module";
+import { UsersPageModule } from "./pages/users-page/users.module";
+import { CalendarPageModule } from "./pages/calenadar-page/calendar-page.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,8 +15,11 @@ import { AppRoutingModule } from "./app-routing.module";
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MainPageModule,
     AppRoutingModule,
+    MainPageModule,
+    TodosPageModule,
+    UsersPageModule,
+    CalendarPageModule,
   ],
   bootstrap: [AppComponent],
 })

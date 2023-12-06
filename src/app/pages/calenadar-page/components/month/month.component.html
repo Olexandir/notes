@@ -1,0 +1,25 @@
+<table class="month">
+  <ng-content select="[monthName]"></ng-content>
+
+  <tbody class="month-body">
+    <ng-content select="[weekDays]"></ng-content>
+    <tr
+      class="month-week"
+      *ngFor="let week of month?.days | chunk : 7; trackBy: identify"
+    >
+      <ng-container *ngFor="let day of week">
+        <td
+          *ngIf="day !== null; else empty"
+          class="calendar-day"
+          [colourDay]="day"
+        >
+          {{ day | date : "d" }}
+        </td>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #empty>
+  <td class="calendar-day"></td>
+</ng-template>

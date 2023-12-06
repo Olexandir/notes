@@ -1,3 +1,7 @@
 <div class="page-wrapper main-page">
-  <nav-item *ngFor="let navItem of navItems" [navItem]="navItem"></nav-item>
+  <nav-item
+    *ngFor="let navItem of navItems"
+    [navItem]="navItem"
+    [routerLink]="navItem.link"
+  ></nav-item>
 </div>

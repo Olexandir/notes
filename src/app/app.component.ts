@@ -10,6 +10,6 @@ export class AppComponent {
   constructor(private general: GeneralService) {}
 
   ngOnInit() {
-    this.general.getAll();
+    // this.general.getAll();
   }
 }
